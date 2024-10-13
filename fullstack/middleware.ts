@@ -4,9 +4,12 @@ import { NextRequest, NextResponse } from 'next/server';
 export default async function middleware(req: NextRequest) {
     const path = req.nextUrl.pathname;
 
+    const nextJRegex = new RegExp(
+        '((?!api|_next/static|_next/image|img/|favicon.ico).*)'
+    );
+
     if (
-        path.includes('_next') ||
-        path.includes('/api') ||
+        path.match(nextJRegex) ||
         path === '/login' ||
         path === '/forgot-password' ||
         path.includes('reset-password')

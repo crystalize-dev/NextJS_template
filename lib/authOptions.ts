@@ -69,7 +69,7 @@ export const authConfig: NextAuthOptions = {
     callbacks: {
         async session({ token, session }) {
             if (token) {
-                session.user = session.user || {}; // Ensure session.user is always defined
+                session.user = session.user || {};
                 (session.user as CustomUser).id = token.id as string;
                 session.user.name = token.name;
                 session.user.email = token.email;

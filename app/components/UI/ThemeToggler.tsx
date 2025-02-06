@@ -5,6 +5,7 @@ import { ThemeContext } from '@/app/context/ThemeContext';
 
 interface ThemeTogglerProps extends React.HTMLAttributes<SVGSVGElement> {
     disabled?: boolean;
+    className?: string;
 }
 
 const ThemeToggler: React.FC<ThemeTogglerProps> = ({

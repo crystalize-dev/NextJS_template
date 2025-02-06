@@ -77,7 +77,7 @@ const Input = ({
     );
 
     const inputClassNames = classNames(
-        'bg-light-bg dark:bg-dark-object h-12 w-full rounded-md p-4 !text-base transition-all',
+        'bg-light dark:bg-dark-secondary h-12 w-full rounded-md p-4 !text-base transition-all dark:text-white',
         focusStyles,
         { [disabledStyles]: disabled },
         { 'pr-10': icon },

@@ -14,12 +14,12 @@ const config = {
                     dark: 'var(--primary-dark)'
                 },
                 light: {
-                    bg: 'var(--bg-full)',
-                    object: 'var(--bg-object)'
+                    DEFAULT: 'var(--bg-full)',
+                    secondary: 'var(--bg-object)'
                 },
                 dark: {
-                    bg: 'var(--bg-full-dark)',
-                    object: 'var(--bg-object-dark)'
+                    DEFAULT: 'var(--bg-full-dark)',
+                    secondary: 'var(--bg-object-dark)'
                 }
             }
         }
